@@ -1,4 +1,4 @@
-import { Section, Text } from "@/presentation/components"
+import { Box, Section, Text } from "@/presentation/components"
 import { BaseLayout, Footer } from "@/presentation/layouts"
 import Head from "next/head"
 
@@ -24,6 +24,9 @@ export default function Home() {
                             for over a year. I have been helping various clients to establish their presence online.
                             I always strive to learn about the newest technologies and frameworks.
                         </Text.Description>
+                        <Box>
+                            1
+                        </Box>
                     </Section>
                 </BaseLayout>
                 <Footer />
