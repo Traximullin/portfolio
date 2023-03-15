@@ -1,3 +1,4 @@
+import { Section, Text } from "@/presentation/components"
 import { BaseLayout, Footer } from "@/presentation/layouts"
 import Head from "next/head"
 
@@ -11,7 +12,20 @@ export default function Home() {
                 <link rel="icon" href="/favicon.ico" />
             </Head>
             <main>
-                <BaseLayout />
+                <BaseLayout>
+                    <Section title="контакты">
+                        <Text.Description>
+                            Hello, i’m Traximullin!
+
+                            I can develop responsive websites from scratch and raise them into modern 
+                            user-friendly web experiences. 
+
+                            Transforming my creativity and knowledge into a websites has been my passion
+                            for over a year. I have been helping various clients to establish their presence online.
+                            I always strive to learn about the newest technologies and frameworks.
+                        </Text.Description>
+                    </Section>
+                </BaseLayout>
                 <Footer />
             </main>
         </>
