@@ -1,0 +1,37 @@
+@import "/main/utils/styles/variables";
+
+.base-layout {
+    display: grid;
+    grid-template-columns: min-content 1fr min-content;
+
+    &__side-bar {
+        min-width: 171px;
+
+        &:first-child {
+            position: relative;
+            &::after {
+                content: "";
+                position: absolute;
+                width: 1px;
+                height: 191px;
+                left: 26.5px;
+                background-color: $color-gray;
+            }
+        }
+    }
+
+    &__content {
+        background-color: $color-content;
+        height: 120vh;
+    }
+
+    &__links {
+        position: fixed;
+        top: 210px;
+        left: 17px;
+        display: flex;
+        flex-direction: column;
+        gap: 14px;
+    }
+
+}
