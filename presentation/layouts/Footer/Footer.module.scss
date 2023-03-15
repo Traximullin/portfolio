@@ -1,0 +1,39 @@
+@import "/main/utils/styles/variables";
+
+.footer {
+    border-top: 1px solid $color-white;
+    padding: 0 171px;
+
+    &__content {
+        background-color: $color-content;
+        padding: 32px 0;
+    }
+
+    &__copyright {
+        text-align: center;
+        color: $color-gray;
+        font-size: 21px;
+        margin-top: 48px;
+    }
+
+    &__information {
+        display: grid;
+        grid-template-columns: 1fr min-content;
+        gap: 16px;
+        color: $color-white;
+        font-size: 21px;
+        :nth-child(2n) {
+            width: 112px;
+        }
+    }
+
+    &__email {
+        color: $color-gray;
+        padding-left: 20px;
+    }
+
+    &__media-title {
+        font-size: 24px;
+        color: $color-white;
+    }
+}

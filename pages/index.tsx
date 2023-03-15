@@ -1,4 +1,4 @@
-import { Header } from "@/presentation/components"
+import { BaseLayout, Footer } from "@/presentation/layouts"
 import Head from "next/head"
 
 export default function Home() {
@@ -11,7 +11,8 @@ export default function Home() {
                 <link rel="icon" href="/favicon.ico" />
             </Head>
             <main>
-                <Header />
+                <BaseLayout />
+                <Footer />
             </main>
         </>
     )
