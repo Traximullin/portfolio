@@ -2,8 +2,11 @@ import { FC } from "react"
 import styles from "./BaseLayout.module.scss"
 import { gitHubSvg } from "@/presentation/assets/svg"
 import { ContactIcon } from "@/presentation/components"
+import { IBaseLayout } from "./interface"
 
-const BaseLayout: FC = () => {
+const BaseLayout: FC<IBaseLayout> = (props) => {
+    const {children,} = props
+    
     return (
         <div className={styles["base-layout"]}>
             <div className={styles["base-layout__side-bar"]}>
@@ -15,7 +18,7 @@ const BaseLayout: FC = () => {
                 </div>
             </div>
             <div className={styles["base-layout__content"]}>
-                12
+                {children}
             </div>
             <div className={styles["base-layout__side-bar"]}>
 

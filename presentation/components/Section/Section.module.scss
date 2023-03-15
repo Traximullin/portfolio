@@ -1,0 +1,29 @@
+@import "/main/utils/styles/variables";
+
+.section {
+
+    &__title {
+        font-size: 32px;
+        font-weight: 500;
+        color: $color-white;
+        letter-spacing: 1px;
+        position: relative;
+        width: min-content;
+        margin-bottom: 45px;
+        
+        &::before {
+            content: "";
+            position: absolute;
+            width: 127px;
+            height: 1px;
+            top: 18.5px;
+            right: -140px;
+            background-color: $color-primary;
+        }
+    }
+
+    &__sharp {
+        color: $color-primary;
+    }
+
+}
