@@ -24,8 +24,9 @@ export default function Home() {
                             for over a year. I have been helping various clients to establish their presence online.
                             I always strive to learn about the newest technologies and frameworks.
                         </Text.Description>
-                        <Box>
-                            1
+                        <Box themes="noneInternalBorder">
+                            <p>1</p>
+                            <p>1</p>
                         </Box>
                     </Section>
                 </BaseLayout>
