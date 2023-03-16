@@ -1,6 +1,7 @@
-import { Box, Section, Text } from "@/presentation/components"
-import { BaseLayout, Footer } from "@/presentation/layouts"
+import { Box, ContactIcon, Section, Text } from "@/presentation/components"
+import { BaseLayout, Flex, Footer, Grid } from "@/presentation/layouts"
 import Head from "next/head"
+import { gitHubSvg } from "@/presentation/assets/svg";
 
 export default function Home() {
     return (
@@ -14,20 +15,25 @@ export default function Home() {
             <main>
                 <BaseLayout>
                     <Section title="контакты">
-                        <Text.Description>
-                            Hello, i’m Traximullin!
-
-                            I can develop responsive websites from scratch and raise them into modern 
-                            user-friendly web experiences. 
-
-                            Transforming my creativity and knowledge into a websites has been my passion
-                            for over a year. I have been helping various clients to establish their presence online.
-                            I always strive to learn about the newest technologies and frameworks.
-                        </Text.Description>
-                        <Box themes="noneInternalBorder">
-                            <p>1</p>
-                            <p>1</p>
-                        </Box>
+                        <Grid gridTemplateColumns="1fr min-content">
+                            <Text.Description>
+                            I’m interested in freelance opportunities. However, if you have other request or 
+                            question, don’t hesitate to contact me
+                            </Text.Description>
+                            <Box themes="noneInternalBorder" title="Message me here">
+                                <Flex flexDirection="column" gap={8}>
+                                    <Flex alignItems="center" gap={4}>
+                                        <ContactIcon src={gitHubSvg} />
+                                        <p>github.com/Traximullin</p>
+                                    </Flex>
+                                    <Flex alignItems="center" gap={4}>
+                                        <ContactIcon src={gitHubSvg} />
+                                        <p>traximullin@bk.ru</p>
+                                    </Flex>
+                                </Flex>
+                            </Box>
+                        </Grid>
+                        
                     </Section>
                 </BaseLayout>
                 <Footer />

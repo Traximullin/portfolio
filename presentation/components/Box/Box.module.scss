@@ -3,7 +3,7 @@
 .box {
     border: 1px solid $color-gray;
     width: max-content;
-
+    height: max-content;
     &__title, &__content {
         padding: 8px;
     }
