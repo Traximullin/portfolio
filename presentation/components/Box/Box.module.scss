@@ -18,4 +18,14 @@
     &__content {
         color: $color-gray;
     }
+
+    &_theme {
+        
+        &_none-internal-border {
+            .box__title {
+                border-bottom: none;
+            }
+        }
+
+    }
 }
