@@ -15,7 +15,7 @@ const Box: FC<IBox> = (props) => {
 
     return (
         <div className={currentClasses.join(" ")} data-testid="Box">
-            <p className={styles["box__title"]}>Title</p>
+            <p className={styles["box__title"]}>{title}</p>
             <div className={styles["box__content"]}>
                 {children}
             </div>
